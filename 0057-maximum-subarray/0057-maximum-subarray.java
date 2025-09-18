@@ -3,8 +3,9 @@ class Solution {
         int current_sum=0;
         int max_sum=Integer.MIN_VALUE;
         for(int i:nums){
-             current_sum=(i>current_sum+i)?i:current_sum+i;
-            if(current_sum>max_sum)max_sum=current_sum;
+            if(current_sum<0)current_sum=0;
+            current_sum+=i;
+           max_sum=(current_sum>max_sum)?current_sum:max_sum;
             
         }
         return max_sum;
