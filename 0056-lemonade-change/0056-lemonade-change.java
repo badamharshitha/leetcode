@@ -13,10 +13,10 @@ class Solution {
                 else return false;
               }
               else{
-                 if(fives>=3)fives-=3;
-                else if(tens>=1&&fives>=1){
+                 if(tens>=1&&fives>=1){
                 tens-=1;
                 fives-=1;}
+                else if(fives>=3)fives-=3;
                 else return false;
               }
         }
