@@ -2,7 +2,7 @@ class Solution {
     public int numWaterBottles(int numBottles, int numExchange) {
     int res=numBottles;
     int sum=res;
-    while(res>=numExchange){
+    while(res>0){
      sum+=res/numExchange;
      int rem=res%numExchange+res/numExchange;
      if(rem>=numExchange){
