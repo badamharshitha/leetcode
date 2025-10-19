@@ -4,11 +4,13 @@ class Solution {
         if(s.length()!=t.length())return false;
         for(int i=0;i<s.length();i++)
         {
-            if(map.containsKey(s.charAt(i))){
-          if(t.charAt(i)!=map.get(s.charAt(i)))return false;}
+            char first=s.charAt(i);
+           char second=t.charAt(i);
+            if(map.containsKey(first)){
+          if(second!=map.get(first))return false;}
           else {
-            if(map.containsValue(t.charAt(i)))return false;
-           map.put(s.charAt(i),t.charAt(i));}
+            if(map.containsValue(second))return false;
+            map.put(first,second);}
         }
         return true;
     }
