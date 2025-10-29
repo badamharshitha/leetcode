@@ -6,7 +6,7 @@ class Solution {
             int max=0;
            for(int j=0;j<grid.length;j++)
            {
-          int n=String.valueOf(grid[j][i]).length();
+          int n=Integer.toString(grid[j][i]).length();
           if(n>max)max=n;
            }
            arr[i]=max;
