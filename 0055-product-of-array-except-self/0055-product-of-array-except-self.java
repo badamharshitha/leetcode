@@ -11,10 +11,13 @@ class Solution {
         }
         for(int i=0;i<n;i++)
         {
-            if(zeroes>0&&(nums[i]!=0||n==zeroes)){
-                arr[i]=0;}
-            else if(nums[i]!=0) arr[i]=product/nums[i];
-            else arr[i]=product;
+            if(nums[i]==0&&zeroes==1)arr[i]=product;
+            else if((zeroes>1||(nums[i]!=0&&zeroes==1))){
+                arr[i]=0;
+                }
+            else if(nums[i]!=0) {
+          arr[i]=product/nums[i];
+                }
         }
         return arr;
     }
