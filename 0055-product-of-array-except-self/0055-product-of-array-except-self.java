@@ -15,7 +15,7 @@ class Solution {
             else if((zeroes>1||(nums[i]!=0&&zeroes==1))){
                 arr[i]=0;
                 }
-            else if(nums[i]!=0) {
+            else {
           arr[i]=product/nums[i];
                 }
         }
