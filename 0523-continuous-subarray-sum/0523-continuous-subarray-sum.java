@@ -9,7 +9,6 @@ class Solution {
             sum+=nums[i];
              if(!map.containsKey(sum%k))map.put(sum%k,i);
             if(map.containsKey(sum%k)){
-                int val=map.get(sum%k);
                 if(i-map.get(sum%k)>=2)return true;
             }
            
